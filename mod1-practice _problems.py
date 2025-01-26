@@ -34,25 +34,22 @@ print("The area of the triangle is:", area)
 #Get users input
 import math
 print("Input your numbers to calculate total, average, minumum, maximum, range and standard deviation")
-numbers = [
-    float(input("First number:")),
-    float(input("Next number:")),
-    float(input("Next number:")),
-    float(input("Next number:")),
-    float(input("Next number:")),
-    ]
+num1 = int(input("First number:"))
+num2 = int(input("Next number:"))
+num3 = int(input("Next number:"))
+num4 = int(input("Next number:"))
+num5 = int(input("Next number:"))
 #Calcutate total, average, minimum, maximum, range, and standard deviation
-total = sum(numbers)
-average = sum(numbers) // len(numbers)
-minimum = min(numbers)
-maximum = max(numbers)
-#I had to look this part up I still dont quite understand standard deviation
-variance = sum((x - average) * 2 for x in numbers) / len(numbers)
-std_deviation = math.sqrt(variance)
+total = num1 + num2 + num3 + num4 + num5
+average = total // 5
+minimum = min(num1,num2,num3,num4,num5)
+maximum = max(num1,num2,num3,num4,num5)
+
+std_deviation = math.sqrt()
 #Print total, average, minimum, maximum, range, and standard deviation
 print("\nTotal is", total)
 print("Average is", average)
 print("Minimum is:", minimum)
 print("Maximum is:", maximum)
-print("Range is:", range_val)
+# print("Range is:", range_val) Dont have the tools to calculate the range
 print("Standard deviation is:", std_deviation)
