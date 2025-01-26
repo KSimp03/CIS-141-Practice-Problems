@@ -25,14 +25,10 @@ side_a = float(input("length of side a:"))
 side_b = float(input("length of side b:"))
 side_c = float(input("length of side c:"))
 # Check if the inputs form a valid triangle
-if side_a + side_b > side_c and side_a + side_c > side_b and side_b + side_c > side_a:
-    # s = 1/2 ( a + b + c ) 
-    s = (side_a + side_b + side_c) / 2
-    area = math.sqrt(s * (s - side_a) * (s - side_b) * (s - side_c))
-    print("The area of the triangle is:", area)
-else:
-    print("This is not a valid triangle, try reinputting your numbers.")
-
+# s = 1/2 ( a + b + c ) 
+s = (side_a + side_b + side_c) / 2
+area = math.sqrt(s * (s - side_a) * (s - side_b) * (s - side_c))
+print("The area of the triangle is:", area)
 
 # 4. Create a program that computes different statistics given five numbers including the total, average, minimum, maximum, range, and standard deviation (https://en.wikipedia.org/wiki/Standard_deviation).
 #Get users input
@@ -50,7 +46,6 @@ total = sum(numbers)
 average = sum(numbers) // len(numbers)
 minimum = min(numbers)
 maximum = max(numbers)
-range_val = minimum - maximum
 #I had to look this part up I still dont quite understand standard deviation
 variance = sum((x - average) * 2 for x in numbers) / len(numbers)
 std_deviation = math.sqrt(variance)
