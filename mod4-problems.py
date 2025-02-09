@@ -1,24 +1,25 @@
 #1. Construct a truth table for the expression: (A AND B) OR (NOT B) where A and B each can be True or False. Your truth table should be commented out (as it's not valid Python code!)
 #And Operation
-# A    B        A and B
-# ----------------------
-#True True      True
-#False False    False
-#False True     False
-#True False     False
+# A      B      (A AND B)    (NOT B)  
+# -------------------------------------
+# True   True    True        False     
+# True   False   False       True      
+# False  True    False       False     
+# False  False   False       True      
+
 
 #2. The headlights of a car should only automatically turn on when the daylight outside is below a certain threshold. If a sensor threshold is below the number 8, print "Headlights On"; otherwise, print "Headlights Off".
 daylight = int(input("What is the senor number?\n"))
-if daylight >= 8:
+if daylight =< 8:
     print("Headlights on")
-elif daylight < 8:
+elif daylight > 8:
     print("Headlights off")
 
 #3. Prompt the user for their bank balance. Evaluate whether the balance is less than $100. Print True if the user’s balance is below $100; print False, otherwise.
 balance = int(input("What is your current balance?\n$"))
-if balance >= 100:
+if balance <=100:
     print("True")
-elif balance < 100:
+elif balance > 100:
     print("False")
 
 #4. A theater wants to enforce age restrictions for movie tickets. Ask the user for their age, and tell them whether they can see G (appropriate for under 13), PG-13 (appropriate for 13 to 17), or R (appropriate for over 18) rated movies.
